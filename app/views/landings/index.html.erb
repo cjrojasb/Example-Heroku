@@ -1,0 +1,14 @@
+<h1>Este es el primer formulario del libro</h1>
+<%= flash[:notice] %>
+<%= flash[:alert] %>
+<form method="POST" action="<%= landings_receive_path %>" class="form">
+  <label for="email">E-mail</label>
+  <input name="email">
+  <input type="submit" value="Suscribirse">
+</form>
+
+<%= form_tag landings_receive_path, method: :post, class: 'form' %>
+  <%= label_tag "email", "Email" %>
+  <%= email_field_tag "email" %>
+<%= submit_tag "Suscribirse", class: "btn btn-success" %>
+
