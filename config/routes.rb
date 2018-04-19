@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 
   get 'landings/index'
+
+  get 'landings/get_leads'
   
   post 'landings/receive'
 

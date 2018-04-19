@@ -14,4 +14,8 @@ class LandingsController < ApplicationController
     end
   end
 
+  def get_leads
+    @users = User.all
+  end
+
 end
